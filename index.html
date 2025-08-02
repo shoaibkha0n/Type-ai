@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Types of Artificial Intelligence</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      background: #fff;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+    #redirectBtn {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    #redirectBtn:disabled {
+      background-color: #aaa;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>7 Types of Artificial Intelligence</h1>
+    <p>Artificial Intelligence (AI) is transforming the world at a rapid pace. From Narrow AI to Superintelligent AI, every type plays a vital role in modern technology.</p>
+    <p>This article explains the 7 different types of AI, including Reactive Machines, Limited Memory, and Theory of Mind AI.</p>
+    <p>Stay updated with the future of AI and explore how each type impacts industries globally.</p>
+
+    <button id="redirectBtn" onclick="startCountdown()" disabled>Click here to continue (5s)</button>
+  </div>
+
+  <script>
+    let countdown = 5;
+    const btn = document.getElementById("redirectBtn");
+
+    // Enable button after slight load
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.innerText = "Click here to continue";
+    }, 1000);
+
+    function startCountdown() {
+      btn.disabled = true;
+      const interval = setInterval(() => {
+        countdown--;
+        btn.innerText = `Redirecting in ${countdown}s...`;
+        if (countdown === 0) {
+          clearInterval(interval);
+          window.location.href = "https://www.futuretuchai.site/2025/07/7-types-of-artificial-intelligence.html";
+        }
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
